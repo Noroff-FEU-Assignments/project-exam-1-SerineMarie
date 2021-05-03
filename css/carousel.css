@@ -1,0 +1,108 @@
+/* CAROUSEL 1 */
+
+:root {
+  --orange: #dba53a;
+  --black: #000000;
+}
+
+.container {
+  width: 90%;
+  margin: 20px auto;
+}
+
+.carousel {
+  border: 5px dotted red;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.slider {
+  display: flex;
+  height: 100%;
+  width: 400%;
+}
+
+.slider section {
+  flex-basis: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 20px;
+}
+
+.control ul {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%);
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.control ul li {
+  width: 15px;
+  height: 15px;
+  border: 2px solid var(--orange);
+  border-radius: 50%;
+  margin: 10px;
+  background: transparent;
+}
+
+.control ul li.selected {
+  background: var(--orange);
+}
+
+/* CAROUSEL 2 */
+
+.container2 {
+  margin: 20px auto;
+}
+
+.carousel2 {
+  border: 2px solid blue;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.slider2 {
+  display: flex;
+  height: 100%;
+  width: 400%;
+  transition: all 0.8s;
+}
+
+.slider2 section {
+  flex-basis: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 20px;
+}
+
+.control2 .arrow {
+  position: absolute;
+  top: 50%;
+}
+
+.arrow.left {
+  left: 10px;
+}
+
+.arrow.right {
+  right: 10px;
+}
+
+@media (min-width: 1025px) {
+  .container2 {
+    width: 75%;
+  }
+  .slider2 {
+    width: 200%;
+  }
+}

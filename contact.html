@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Source+Sans+Pro:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Exam 1</title>
+  </head>
+  <body>
+    <header>
+      <label for="hamburgerMenu"><i class="fas fa-bars"></i></label>
+      <input type="checkbox" id="hamburgerMenu" />
+      <nav>
+        <ul>
+          <a href="index.html"><li>Home</li></a>
+          <a href="posts.html"><li>Blog</li></a>
+          <a><li>Archive??</li></a>
+          <li><i class="fab fa-instagram-square"></i></li>
+          <li><i class="fab fa-youtube-square"></i></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="contactPage"></div>
+      <div class="contactBox">
+        <form class="contactForm">
+          <div>
+            <label>
+              Name *
+              <input name="name" id="name" />
+            </label>
+            <div class="error" id="nameError">Please enter your name</div>
+          </div>
+          <div>
+            <label
+              >Email address *
+              <input name="email" id="email" />
+            </label>
+            <div class="error" id="emailError">
+              Please enter a valid email address
+            </div>
+          </div>
+          <div>
+            <label
+              >Subject *
+              <input name="text" id="subject" />
+            </label>
+            <div class="error" id="subjectError">
+              Please enter a minimum of 15 characters
+            </div>
+          </div>
+          <div>
+            <label
+              >Message *
+              <input name="text" id="message" />
+            </label>
+            <div class="error" id="messageError">
+              Please enter a minimum of 25 characters
+            </div>
+            <p class="required">* required</p>
+          </div>
+          <button>Send in</button>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <div>
+        <a href="contact.html" class="active">Contact</a>
+        <a href="about.html">About</a>
+      </div>
+    </footer>
+  </body>
+</html>
