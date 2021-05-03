@@ -32,6 +32,7 @@ nav li {
 ul {
   margin-top: 2%;
   margin-left: 50%;
+  font-size: 1.3em;
 }
 
 nav a:hover {
