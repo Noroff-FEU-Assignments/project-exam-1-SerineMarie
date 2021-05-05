@@ -7,23 +7,29 @@
   --darkgrey: #707070;
 }
 
-/*IMAGES*/
+p {
+  font-family: "Source Sans Pro", sans-serif;
+}
 
-.wp-image-212,
-.wp-image-296,
-.wp-image-242,
-.wp-image-262,
-.wp-image-269,
-.wp-image-280,
-.wp-image-281,
-.wp-image-282,
-.wp-image-328 {
-  width: 50%;
-  height: 50%;
+.has-text-align-center {
   display: none;
 }
 
-/* NAVIGATION*/
+h1 {
+  font-family: "Source Sans Pro", sans-serif;
+  color: var(--orange);
+  font-size: 2.6em;
+  margin: 2%;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  color: var(--darkgrey);
+  font-size: 1em;
+  margin: 3%;
+}
+
+/*NAVIGATION*/
 
 nav li {
   display: flex;
@@ -69,18 +75,6 @@ nav {
   padding: 1%;
   font-size: 2.1em;
   float: right;
-}
-
-h1 {
-  font-family: "Source Sans Pro", sans-serif;
-  color: var(--orange);
-  font-size: 2.6em;
-}
-
-h2 {
-  font-family: "Montserrat", sans-serif;
-  color: var(--darkgrey);
-  font-size: 1em;
 }
 
 /*FOOTER*/

@@ -12,22 +12,28 @@
       integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
       crossorigin="anonymous"
     />
+    <meta name="viewport" content="width=device-width, inital-scale=1.0" />
+    <title>Project Exam 1</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/contact.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Project Exam 1</title>
   </head>
   <body>
     <header>
-      <label for="hamburgerMenu"><i class="fas fa-bars"></i></label>
+      <label for="hamburgerMenu" class="hamburgerLabel"
+        ><i class="fas fa-bars"></i
+      ></label>
       <input type="checkbox" id="hamburgerMenu" />
       <nav>
         <ul>
           <a href="index.html"><li>Home</li></a>
           <a href="posts.html"><li>Blog</li></a>
           <a><li>Archive??</li></a>
-          <li><i class="fab fa-instagram-square"></i></li>
-          <li><i class="fab fa-youtube-square"></i></li>
+          <a
+            ><li><i class="fab fa-instagram-square"></i></li
+          ></a>
+          <a
+            ><li><i class="fab fa-youtube-square"></i></li
+          ></a>
         </ul>
       </nav>
     </header>
@@ -75,10 +81,11 @@
       </div>
     </main>
     <footer>
-      <div>
+      <div class="footer">
         <a href="contact.html" class="active">Contact</a>
         <a href="about.html">About</a>
       </div>
     </footer>
+    <script src="js/contact.js"></script>
   </body>
 </html>
