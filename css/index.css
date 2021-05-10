@@ -1,3 +1,8 @@
+img {
+  width: 100%;
+  height: 100%;
+}
+
 .wp-image-212,
 .wp-image-296,
 .wp-image-242,
@@ -9,7 +14,46 @@
 .wp-image-328,
 .wp-image-331,
 .wp-image-332 {
-  width: 50%;
-  height: 50%;
   display: none;
+}
+
+.more-link {
+  display: none;
+}
+
+/*LATEST POST CONTENT*/
+
+.txt-content p,
+.txt-content img {
+  display: none;
+}
+
+.txt-content .wp-image-213,
+.txt-content .wp-image-223,
+.txt-content .wp-image-226,
+.txt-content .wp-image-228,
+.txt-content .wp-image-231,
+.txt-content .wp-image-234,
+.txt-content .wp-image-237,
+.txt-content .wp-image-331,
+.txt-content .wp-image-282 {
+  display: block;
+}
+
+.short-txt {
+  font-size: 0.8em;
+  padding: 2%;
+}
+
+.wp-image-356 {
+  margin-top: 10%;
+}
+
+@media (min-width: 1024px) {
+  .wp-image-356 {
+    margin-left: 20%;
+    margin-top: -2%;
+    height: 60%;
+    width: 60%;
+  }
 }

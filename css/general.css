@@ -29,6 +29,10 @@ h2 {
   margin: 3%;
 }
 
+.date {
+  text-align: center;
+}
+
 /*NAVIGATION*/
 
 nav li {
