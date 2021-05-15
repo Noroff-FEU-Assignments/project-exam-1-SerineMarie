@@ -25,8 +25,10 @@ async function posts(){
             date.innerHTML += `<div class="date">${result.date}<div>`
             post.innerHTML += `<div class="post">${result.content.rendered}</div>`
 
-    } catch(error){
+    } catch (error){
         console.log(error)
+        homepage.innerHTML = errorMessage ("Ups! Something went wrong, please try again later");
+
     }
 }
 

@@ -13,8 +13,10 @@ async function about (){
         aboutInfo.innerHTML = `   <h1 class="contactTitle">${result[2].title.rendered}</h1>`
         aboutBox.innerHTML = `<div>${result[2].content.rendered}</div>`
 
-    } catch(error){
+    } catch (error){
         console.log(error)
+        homepage.innerHTML = errorMessage ("Ups! Something went wrong, please try again later");
+
     }
 }
 

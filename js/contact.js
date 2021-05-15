@@ -2,18 +2,21 @@ const contact = document.querySelector(".contactPage")
 const title = document.querySelector("title")
 const url = "https://serinetj.com/wp-json/wp/v2/pages";
 
+
 async function info (){
     try{
         const response = await fetch(url);
         const result = await response.json();
         console.log(result)
         title.innerHTML = `${result[1].title.rendered}`
-
+        
         contact.innerHTML = `   <h1 class="contactTitle">${result[1].title.rendered}</h1>
                                 <div>${result[1].content.rendered}</div>`
 
-    } catch(error){
+    } catch (error){
         console.log(error)
+        homepage.innerHTML = errorMessage ("Ups! Something went wrong, please try again later");
+
     }
 }
 

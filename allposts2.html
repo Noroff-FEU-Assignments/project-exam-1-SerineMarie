@@ -13,9 +13,9 @@
       crossorigin="anonymous"
     />
     <meta name="viewport" content="width=device-width, inital-scale=1.0" />
-    <title>Project Exam 1</title>
-    <link rel="stylesheet" href="/css/onepost.css" />
-    <link rel="stylesheet" href="/css/general.css" />
+    <title>Blog Posts</title>
+    <link rel="stylesheet" href="css/allposts.css" />
+    <link rel="stylesheet" href="css/general.css" />
   </head>
   <body>
     <header>
@@ -23,37 +23,36 @@
         ><i class="fas fa-bars"></i
       ></label>
       <input type="checkbox" id="hamburgerMenu" />
-      <a href="index.html"><div class="backTitle">Serine Travels</div></a>
-
       <nav>
         <ul>
           <a href="index.html"><li>Home</li></a>
-          <a href="allposts.html"><li>Blog</li></a>
-          <a href="https://www.instagram.com/serinetravels/"
+          <a href="allposts.html" class="active"><li>Blog</li></a>
+          <a><li>Archive??</li></a>
+          <a
             ><li><i class="fab fa-instagram-square"></i></li
           ></a>
-          <a href="https://www.youtube.com/"
+          <a
             ><li><i class="fab fa-youtube-square"></i></li
           ></a>
         </ul>
       </nav>
     </header>
     <main>
-      <div class="onepostContent">
-        <div class="title"></div>
-        <div class="date"></div>
-        <div class="post"></div>
-        <div class="categories"></div>
+      <div class="allpostContainer">
+        <div class="loader"></div>
+        <div class="container">
+          <div class="postCard"></div>
+        </div>
       </div>
       <div class="loadError"></div>
     </main>
     <footer>
       <div class="footer">
-        <a href="contact.html" class="contact"><p>CONTACT</p></a>
-        <a href="about.html"><p>ABOUT</p></a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
       </div>
     </footer>
   </body>
-  <script src="js/onepost.js"></script>
+  <script src="js/allposts.js"></script>
   <script src="js/error.js"></script>
 </html>

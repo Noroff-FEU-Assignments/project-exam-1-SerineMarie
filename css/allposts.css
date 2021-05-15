@@ -6,35 +6,95 @@
   --grey: #dddd;
   --darkgrey: #707070;
 }
-/* .container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-} */
-.postcard {
-  /* grid-column: 2; */
-  border: 2px solid var(--orange);
-  padding: 2%;
-  margin-top: 5%;
+
+.backTitle {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8em;
+  margin-top: -2%;
+  color: var(--orange);
 }
 
-/* .heading {
-  margin-top: -2%;
-} */
+.txt-content p,
+.allpostContainer img {
+  display: none;
+}
 
-/* .info {
-  margin-top: -5%;
-} */
+.allpostContainer .wp-image-268,
+.allpostContainer .wp-image-262,
+.allpostContainer .wp-image-250,
+.allpostContainer .wp-image-242,
+.allpostContainer .wp-image-282,
+.allpostContainer .wp-image-233,
+.allpostContainer .wp-image-231,
+.allpostContainer .wp-image-225,
+.allpostContainer .wp-image-220,
+.allpostContainer .wp-image-212,
+.allpostContainer .wp-image-236,
+.allpostContainer .wp-image-228 {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.file {
+  border: 2px solid var(--orange);
+  padding: 2%;
+  margin-top: 20%;
+  border-radius: 2%;
+}
+
+section h1 {
+  font-size: 1.4em;
+  margin: 0%;
+  text-align: center;
+}
+
+.file a {
+  color: var(--black);
+  font-family: "Source Sans Pro", sans-serif;
+}
 
 .more-link {
   display: none;
 }
 
-@media (min-width: 1025px) {
-  .container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+@media (min-width: 1024px) {
+  .backTitle {
+    display: none;
   }
-  .postcard {
-    grid-column: 1/4;
+
+  .allpostContainer {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+  }
+
+  .file {
+    width: 40%;
+    margin: 1%;
+  }
+
+  .allpostContainer .wp-image-268,
+  .allpostContainer .wp-image-262,
+  .allpostContainer .wp-image-250,
+  .allpostContainer .wp-image-242,
+  .allpostContainer .wp-image-282,
+  .allpostContainer .wp-image-233,
+  .allpostContainer .wp-image-231,
+  .allpostContainer .wp-image-225,
+  .allpostContainer .wp-image-220,
+  .allpostContainer .wp-image-212,
+  .allpostContainer .wp-image-236,
+  .allpostContainer .wp-image-228 {
+    display: block;
+    height: 50%;
+    width: 50%;
   }
 }
+
+/* @media screen and (max-width: 1430px) and (min-width: 1825px) {
+  .allpostContainer {
+    display: flex;
+    justify-content: center;
+  }
+} */

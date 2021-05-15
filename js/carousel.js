@@ -3,17 +3,24 @@ const right = document.querySelector(".right");
 
 const slider = document.querySelector (".slider")
 
-
+let sliderIndex = 0;
 
 right.addEventListener("click", function(){
-    // index = (index > 0) ? index -1 : 0;
-    slider.style.transform = "translate(-50%)";
+   sliderIndex = (sliderIndex < 3) ? sliderIndex + 1 : 3;
+   //  index = (index > 0) ? index -1 : 0;
+    slider.style.transform = "translate("+ (sliderIndex) * -25 + "%)";
  });
 
+
  left.addEventListener("click", function(){
+   sliderIndex = (sliderIndex > 0) ? sliderIndex - 1 : 0;
+
     // index = (index > 0) ? index -1 : 0;
-    slider.style.transform = "translate(0%)";
+    slider.style.transform = "translate("+ (sliderIndex) * -25 + "%)";
+
  });
+
+
 
 //  const imgSlider = document.querySelector(".slider");
 //  const ind1 = document.querySelector(".ind1");
@@ -31,4 +38,3 @@ right.addEventListener("click", function(){
 
 
 //remove the orange cirlce 
-

@@ -1,9 +1,24 @@
 :root {
   --orange: #dba53a;
   --black: #000000;
+  --red: #ff0000;
+  --lightgrey: #f5f5f5;
+  --grey: #dddd;
+  --darkgrey: #707070;
 }
 
 /* CAROUSEL */
+.latest {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  color: var(--orange);
+  font-size: 1.7em;
+}
+
+section h1 {
+  font-size: 0.8em;
+  margin: 0%;
+}
 
 .container {
   margin: 20px auto;
@@ -15,13 +30,6 @@
   overflow: hidden;
   border-radius: 5px;
   width: auto;
-}
-
-.latest {
-  font-family: "Montserrat", sans-serif;
-  text-align: center;
-  font-size: 1.6em;
-  margin-top: -30%;
 }
 
 .slider {
@@ -42,6 +50,19 @@
 .control .arrow {
   font-size: 1.5em;
   color: var(--orange);
+  position: absolute;
+  margin-top: -8%;
+  margin-left: 40%;
+}
+
+.arrow.left {
+  border-radius: 50%;
+  margin-left: 30%;
+}
+
+.arrow.right {
+  border-radius: 50%;
+  margin-left: 70%;
 }
 
 .arrow.left:hover,
@@ -53,72 +74,84 @@
   padding: 10px;
 }
 
-.file p {
-  margin-top: -5%;
-  padding-top: 2%;
+.file a {
+  font-family: "Source Sans Pro", sans-serif;
+  color: var(--black);
+  font-size: 1.2em;
 }
 
-.wp-image-262 {
-  height: 100%;
-  width: 100%;
+.txt-content p,
+.txt-content img {
+  display: none;
+}
+
+.txt-content .wp-image-231,
+.txt-content .wp-image-237,
+.txt-content .wp-image-331,
+.txt-content .wp-image-282,
+.txt-content .wp-image-269,
+.txt-content .wp-image-262,
+.txt-content .wp-image-281,
+.txt-content .wp-image-260 {
+  display: block;
+}
+
+.short-txt {
+  font-size: 0.8em;
+  padding: 2%;
 }
 
 @media (min-width: 1025px) {
-  .container {
-    width: 75%;
-  }
-
   .carousel {
-    height: 100%;
-    width: 100%;
+    height: 550px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    width: auto;
   }
 
   .slider {
-    width: 200%;
+    display: flex;
+    height: 100%;
+    width: 400%;
+    transition: all 0.8s;
   }
 
   .slider section {
+    flex-basis: 100%;
+    justify-content: center;
+    align-items: center;
     display: flex;
+    flex-direction: column;
   }
 
-  .file {
-    padding: 10px;
-    margin-left: -1px;
-    margin-right: 1px;
+  .container {
+    width: 80%;
   }
 
   .control .arrow {
-    margin-left: 30%;
+    margin-top: -2%;
   }
 
-  .arrow.left,
-  .arrow.right {
-    border-radius: 50%;
-    padding: 1%;
-  }
-
-  .latest {
-    font-family: "Montserrat", sans-serif;
-    text-align: center;
-    font-size: 1.6em;
-    margin-top: -15%;
+  .file a {
+    font-size: 1.5em;
   }
 }
 
-@media (max-width: 1024px) {
+@media screen and (max-width: 1024px) and (min-width: 800px) {
   .control .arrow {
-    position: absolute;
-    margin-top: -8%;
-    margin-left: 40%;
+    margin-top: -5%;
   }
+}
 
-  .arrow.left {
-    border-radius: 50%;
-    margin-left: 30%;
+@media screen and (max-width: 1430px) and (min-width: 1025px) {
+  .control .arrow {
+    margin-top: -5%;
   }
+}
 
-  .arrow.right {
-    border-radius: 50%;
-    margin-left: 70%;
+@media screen and (max-width: 439px) and (min-width: 359px) {
+  .short-txt {
+    font-size: 0.6em;
   }
 }

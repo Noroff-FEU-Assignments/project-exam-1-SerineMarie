@@ -7,8 +7,17 @@
   --darkgrey: #707070;
 }
 
-p {
+.loadError {
+  font-size: 1.5em;
   font-family: "Source Sans Pro", sans-serif;
+  text-align: center;
+  margin-top: 5%;
+  color: var(--orange);
+}
+
+.loadError i {
+  font-size: 1.8em;
+  color: var(--black);
 }
 
 .has-text-align-center {
@@ -16,33 +25,68 @@ p {
 }
 
 h1 {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: var(--orange);
-  font-size: 2.6em;
+  font-size: 2.2em;
   margin: 2%;
 }
 
 h2 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   color: var(--darkgrey);
-  font-size: 1em;
+  font-size: 1.2em;
   margin: 3%;
+}
+
+p {
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 .date {
   text-align: center;
+  font-family: "Source Sans Pro", sans-serif;
+  color: var(--darkgrey);
+}
+
+.loader {
+  border: 10px solid var(--orange);
+  border-top: 10px solid var(--darkgrey);
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin-left: 45%;
+  animation: spin 5s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /*NAVIGATION*/
 
-nav li {
-  display: flex;
+.backTitle {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8em;
+  margin-top: 2%;
+  margin-bottom: 5%;
+  color: var(--orange);
 }
 
-ul {
-  margin-top: 2%;
-  margin-left: 50%;
-  font-size: 1.3em;
+nav a {
+  color: var(--black);
+}
+
+nav li {
+  display: flex;
+  justify-content: center;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 2em;
+  padding-bottom: 10%;
 }
 
 nav a:hover {
@@ -52,10 +96,6 @@ nav a:hover {
 
 a {
   text-decoration: none;
-  color: var(--black);
-  font-family: "Source Sans Pro", sans-serif;
-  font-size: 1.3em;
-  padding: 1px;
 }
 
 .active {
@@ -71,7 +111,14 @@ nav {
 }
 
 #hamburgerMenu:checked ~ nav {
+  position: absolute;
   display: block;
+  background-color: var(--lightgrey);
+  margin-left: 25%;
+  width: 60%;
+  height: 30%;
+  padding-right: 5%;
+  border-radius: 10px;
 }
 
 .hamburgerLabel {
@@ -83,16 +130,40 @@ nav {
 
 /*FOOTER*/
 
-footer {
+/* footer {
+  font-family: "Source Sans Pro", sans-serif;
+} */
+
+.footer {
+  font-family: "Source Sans Pro", sans-serif;
   display: flex;
   justify-content: center;
-  margin-top: 5%;
-  margin-bottom: 5%;
+  font-size: 1.3em;
+}
+
+footer a {
+  color: var(--black);
+  margin: 2%;
+}
+
+footer a:hover {
+  text-decoration: underline var(--orange);
 }
 
 /*MEDIA QUERY*/
+@media screen and (max-width: 1024px) and (min-width: 590px) {
+  #hamburgerMenu:checked ~ nav {
+    width: 40%;
+    height: 30%;
+    margin-left: 50%;
+  }
+}
 
 @media (min-width: 1025px) {
+  .backTitle {
+    display: none;
+  }
+
   nav {
     display: inline-block;
   }
