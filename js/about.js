@@ -10,7 +10,7 @@ async function about (){
         console.log(result)
         title.innerHTML = `${result[1].title.rendered}`
 
-        aboutInfo.innerHTML = `   <h1 class="contactTitle">${result[2].title.rendered}</h1>`
+        aboutInfo.innerHTML = `   <h1 class="aboutTitle">${result[2].title.rendered}</h1>`
         aboutBox.innerHTML = `<div>${result[2].content.rendered}</div>`
 
     } catch (error){

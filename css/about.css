@@ -10,6 +10,11 @@
   font-family: "Montserrat", sans-serif;
 }
 
+.aboutTitle {
+  color: var(--orange);
+  text-align: center;
+}
+
 @media (min-width: 1025px) {
   .wp-image-45 {
     width: 45%;

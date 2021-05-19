@@ -58,12 +58,31 @@ section h1 {
   display: none;
 }
 
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.lessbtn,
+.morebtn {
+  border: 2px solid var(--orange);
+  border-radius: 10px;
+  font-size: 1.5em;
+  font-family: "Source Sans Pro", sans-serif;
+  padding: 5px;
+  margin: 2%;
+  cursor: pointer;
+}
+
+/* MEDIA QUERY*/
+
 @media (min-width: 1024px) {
   .backTitle {
     display: none;
   }
 
-  .allpostContainer {
+  .allpostContainer,
+  .allpostContainer .viewMore {
     display: flex;
     flex-flow: wrap;
     justify-content: center;
@@ -85,16 +104,11 @@ section h1 {
   .allpostContainer .wp-image-220,
   .allpostContainer .wp-image-212,
   .allpostContainer .wp-image-236,
-  .allpostContainer .wp-image-228 {
+  .allpostContainer .wp-image-228,
+  .allpostContainer .wp-image-328,
+  .allpostContainer .wp-image-356 {
     display: block;
     height: 50%;
     width: 50%;
   }
 }
-
-/* @media screen and (max-width: 1430px) and (min-width: 1825px) {
-  .allpostContainer {
-    display: flex;
-    justify-content: center;
-  }
-} */

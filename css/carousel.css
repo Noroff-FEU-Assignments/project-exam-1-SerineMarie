@@ -101,6 +101,10 @@ section h1 {
   padding: 2%;
 }
 
+/* CAROUSEL END */
+
+/* MEDIA QUERY */
+
 @media (min-width: 1025px) {
   .carousel {
     height: 550px;

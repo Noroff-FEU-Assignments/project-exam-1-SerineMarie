@@ -116,3 +116,23 @@ async function allposts(){
 }
 
 allposts();
+
+const viewMore = document.querySelector(".viewMore");
+const morebtn = document.querySelector(".morebtn")
+const lessbtn = document.querySelector(".lessbtn")
+
+viewMore.style.display = "none"
+lessbtn.style.display = "none"
+
+morebtn.onclick = function (){
+    viewMore.style.display = ""
+    morebtn.style.display = "none"
+    lessbtn.style.display = "block"
+} 
+
+lessbtn.onclick = function (){
+    viewMore.style.display = "none"
+    morebtn.style.display = "block"
+    lessbtn.style.display = "none"
+
+}

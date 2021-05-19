@@ -1,9 +1,11 @@
 const post = document.querySelector(".post");
 const title = document.querySelector(".title");
-const date = document.querySelector(".date")
-// const categories = document.querySelector(".categories")
-const webtitle = document.querySelector("title")
+const date = document.querySelector(".date");
+const webtitle = document.querySelector("title");
 
+const modalImg = document.querySelector(".modalContainer");
+const show = document.querySelector(".post");
+const closebtn = document.querySelector(".closebtn");
 
 
 const queryString = document.location.search;
@@ -25,9 +27,28 @@ async function posts(){
             date.innerHTML += `<div class="date">${result.date}<div>`
             post.innerHTML += `<div class="post">${result.content.rendered}</div>`
 
+        
+
+        modalImg.style.display = "none";
+
+        show.onclick = function(){
+            closebtn.style.display = "block";
+            modalImg.style.display = "block";
+            modalImg.innerHTML = `
+                                    <div class="modalContent">${result.content.rendered}</div>
+                                `            
+            
+        }
+
+
+        function closeModal(){
+            modalImg.innerHTML= "";
+            modalImg.style.display = "none";
+        } modalImg.addEventListener("click", closeModal);
+
     } catch (error){
         console.log(error)
-        homepage.innerHTML = errorMessage ("Ups! Something went wrong, please try again later");
+        post.innerHTML = errorMessage ("Ups! Something went wrong, please try again later");
 
     }
 }

@@ -66,3 +66,17 @@ img {
     width: 60%;
   }
 }
+
+@media screen and (max-width: 500px) and (min-width: 100px) {
+  .wp-image-269,
+  .wp-image-262,
+  .wp-image-260,
+  .wp-image-281,
+  .wp-image-282,
+  .wp-image-237,
+  .wp-image-331,
+  .wp-image-231 {
+    width: 150%;
+    height: 150%;
+  }
+}
