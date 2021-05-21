@@ -30,7 +30,9 @@
 .allpostContainer .wp-image-220,
 .allpostContainer .wp-image-212,
 .allpostContainer .wp-image-236,
-.allpostContainer .wp-image-228 {
+.allpostContainer .wp-image-228,
+.allpostContainer .wp-image-328,
+.allpostContainer .wp-image-356 {
   display: block;
   height: 100%;
   width: 100%;
