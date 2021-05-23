@@ -84,7 +84,6 @@ button {
   }
 
   .contactBox {
-    display: flex;
     justify-content: flex-start;
     background: none;
     padding: 0%;

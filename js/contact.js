@@ -27,7 +27,6 @@ info();
 
 
 const contactForm = document.querySelector(".contactForm");
-const success = document.querySelector(".success")
 
 const name = document.querySelector("#name");
 const nameError = document.querySelector("#nameError");

@@ -76,6 +76,11 @@ section h1 {
   cursor: pointer;
 }
 
+.lessbtn:hover,
+.morebtn:hover {
+  text-decoration: underline var(--orange);
+}
+
 /* MEDIA QUERY*/
 
 @media (min-width: 1024px) {

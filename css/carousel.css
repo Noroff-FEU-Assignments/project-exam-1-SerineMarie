@@ -110,6 +110,9 @@ section h1 {
   top: 85%;
   font-size: 0.8em;
 }
+.allpostbtn:hover {
+  text-decoration: underline var(--orange);
+}
 
 /* CAROUSEL END */
 
@@ -140,6 +143,7 @@ section h1 {
   }
   .allpostbtn {
     font-size: 0.6em;
+    top: 90%;
   }
 }
 

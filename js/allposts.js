@@ -12,6 +12,7 @@ const post11 = document.querySelector(".post11");
 const post12 = document.querySelector(".post12");
 
 
+
 const url2 = "https://serinetj.com/wp-json/wp/v2/posts/?per_page=14";
 
 
@@ -22,6 +23,7 @@ async function allposts(){
         const result = await response.json();
 
         console.log(result);
+
         
         post1.innerHTML += `<a href="onepost.html?id=${result[0].id}">
                                 <h1 class="heading">${result[0].title.rendered}</h1>
