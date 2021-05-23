@@ -1,7 +1,12 @@
+body {
+  background-color: var(--greywhite);
+}
+
 :root {
   --orange: #dba53a;
   --black: #000000;
   --white: #ffff;
+  --greywhite: #fdfdfd;
   --red: #ff0000;
   --lightgrey: #f5f5f5;
   --grey: #dddd;
@@ -146,6 +151,16 @@ footer a {
 
 footer a:hover {
   text-decoration: underline var(--orange);
+}
+
+.bottomtags {
+  display: flex;
+  justify-content: center;
+}
+
+.photosby,
+.copyrigth {
+  margin: 1%;
 }
 
 /*MEDIA QUERY*/

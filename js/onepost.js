@@ -2,10 +2,11 @@ const post = document.querySelector(".post");
 const title = document.querySelector(".title");
 const date = document.querySelector(".date");
 const webtitle = document.querySelector("title");
+const contentOnePost = document.querySelector (".onepostContent");
+const footer = document.querySelector("footer")
 
 const modalImg = document.querySelector(".modalContainer");
 const show = document.querySelector(".post");
-const closebtn = document.querySelector(".closebtn");
 
 
 const queryString = document.location.search;
@@ -32,7 +33,8 @@ async function posts(){
         modalImg.style.display = "none";
 
         show.onclick = function(){
-            closebtn.style.display = "block";
+            contentOnePost.style.display = "none";
+            footer.style.display = "none";
             modalImg.style.display = "block";
             modalImg.innerHTML = `
                                     <div class="modalContent">${result.content.rendered}</div>
@@ -42,6 +44,8 @@ async function posts(){
 
 
         function closeModal(){
+            contentOnePost.style.display = "";
+            footer.style.display = "";
             modalImg.innerHTML= "";
             modalImg.style.display = "none";
         } modalImg.addEventListener("click", closeModal);

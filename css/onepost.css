@@ -25,9 +25,8 @@ img {
   position: fixed;
   height: 100%;
   width: 100%;
-  top: 0;
+  top: 5%;
   left: 0;
-  background-color: var(--darkgrey);
   color: var(--white);
   z-index: 1;
   overflow: auto;
@@ -44,16 +43,6 @@ img {
 .modalContent img {
   width: 100%;
   height: 100%;
-}
-
-.closebtn {
-  position: absolute;
-  color: var(--orange);
-  padding: 1%;
-  font-size: 2.2em;
-  z-index: 2;
-  margin-left: 20%;
-  cursor: pointer;
 }
 
 /*MODAL END*/
@@ -87,11 +76,14 @@ h1 {
   }
 
   /* MODAL */
-
+  .modalContainer {
+    top: 2%;
+  }
   .modalContent img {
     width: 50%;
     height: 50%;
     max-width: 700px;
     margin-left: 30%;
+    margin-bottom: 5%;
   }
 }
